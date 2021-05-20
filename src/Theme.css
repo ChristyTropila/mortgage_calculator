@@ -1,0 +1,9 @@
+/* **** Color Theme and Font Variables **** */
+:root {
+  --white: #ffffff;
+  --lightestBlue: #e3f6f5;
+  --mediumBlue: #bae8e8;
+  --darkBlue: #272343;
+  --ptSansNarrowBold: "PT Sans Narrow", sans-serif;
+  --ptSansNormal: "PT Sans", sans-serif;
+}

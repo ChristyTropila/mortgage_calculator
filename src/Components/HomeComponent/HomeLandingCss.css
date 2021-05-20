@@ -1,0 +1,20 @@
+@import "../../Theme.css";
+
+/* * {
+  background-color: var(--lightestBlue);
+} */
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--lightestBlue);
+}
+
+.top-container {
+  display: flex;
+  justify-content: center;
+  color: var(--darkestBlue);
+  font-family: var(--ptSansNarrowBold);
+  font-size: 4rem;
+}
