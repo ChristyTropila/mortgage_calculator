@@ -1,0 +1,11 @@
+@import "../../Theme.css";
+
+.header-text {
+  font-family: var(--ptSansNarrowBold);
+  font-size: 4rem;
+  text-shadow: 2px 2px 4px #000;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  color: var(--darkBlue);
+}

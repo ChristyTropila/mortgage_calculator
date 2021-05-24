@@ -1,0 +1,7 @@
+@import "../../Theme.css";
+
+.directionsText {
+  font-family: var(--ptSansNormal);
+  font-size: 30px;
+  align-self: center;
+}

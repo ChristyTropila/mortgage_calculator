@@ -1,0 +1,12 @@
+.directions-container {
+  /* align-self: center;
+  padding: 10px;
+  width: 30%;
+  background-color: white; */
+}
+
+.calculator-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

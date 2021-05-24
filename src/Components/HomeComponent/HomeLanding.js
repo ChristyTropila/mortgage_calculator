@@ -1,6 +1,7 @@
 import React from 'react';
-import {Header} from '../HeaderComponent/Header'
-import styles from './HomeLandingCss.css'
+import {Header} from '../HeaderComponent/Header';
+import {CalculatorLanding} from '../CalculatorComponent/CalculatorLanding';
+import styles from './HomeLandingCss.css';
 
 export const HomeLanding = () => {
 
@@ -8,6 +9,9 @@ export const HomeLanding = () => {
         <div className='container'>
             <div className='top-container'>
                 <Header/>
+            </div>
+            <div className='bottom-container'>
+                <CalculatorLanding/>
             </div>
         </div>
     )

@@ -4,6 +4,9 @@
   --lightestBlue: #e3f6f5;
   --mediumBlue: #bae8e8;
   --darkBlue: #272343;
+  --lightPink: #faa69c;
+  --darkPurple: rgba(148, 9, 158, 0.8);
+  --yellow: rgba(230, 199, 61, 0.6);
   --ptSansNarrowBold: "PT Sans Narrow", sans-serif;
   --ptSansNormal: "PT Sans", sans-serif;
 }
