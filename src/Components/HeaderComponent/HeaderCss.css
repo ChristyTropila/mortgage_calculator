@@ -1,11 +1,39 @@
 @import "../../Theme.css";
 
-.header-text {
+.header-text-top {
+  position: relative;
+  left: 20px;
   font-family: var(--ptSansNarrowBold);
-  font-size: 4rem;
-  text-shadow: 2px 2px 4px #000;
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 4px var(--darkPurple);
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  opacity: 0.8;
+  opacity: 1;
   color: var(--darkBlue);
+}
+
+.header-text {
+  font-family: var(--ptSansNarrowBold);
+  font-size: 1.5rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--darkBlue);
+  margin: 40px 90px;
+}
+
+.typewriter-container {
+  margin: 30px;
+}
+.txt-type {
+  margin: 20px;
+  font-family: var(--ptSansNarrowBold);
+  font-size: 1.5rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--darkBlue);
+  border-right: 3px solid var(--darkPurple);
+}
+
+.txt {
+  border-right: 30px solid rgb(17, 16, 16);
 }

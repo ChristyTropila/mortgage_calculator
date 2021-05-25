@@ -12,10 +12,10 @@ export const CalculatorLanding = () => {
 
     return(
         <>
-        <div>
+        <div className="directions-container">
         <CalcDirections calcData = {calculationData} />
         </div>
-        <div>
+        <div className="calculator-container">
         <CalcForm getDataFromCalculator={getDataFromCalculator}/>
         </div>
         </>

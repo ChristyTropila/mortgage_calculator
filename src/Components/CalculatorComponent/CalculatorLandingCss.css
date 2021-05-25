@@ -1,12 +1,18 @@
+@import "../../Theme.css";
+
 .directions-container {
-  /* align-self: center;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 5%;
   width: 30%;
-  background-color: white; */
+  border-right: 5px solid var(--darkBlue);
+  background-color: var(--lightestBlue);
 }
 
 .calculator-container {
   display: flex;
-  width: 100%;
+  width: 70%;
   justify-content: center;
 }

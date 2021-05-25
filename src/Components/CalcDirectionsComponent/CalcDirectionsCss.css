@@ -1,7 +1,63 @@
 @import "../../Theme.css";
 
+.label {
+  font-family: var(--ptSansNarrowBold);
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin: 15px 18px;
+}
+
+div {
+  cursor: pointer;
+}
+
+.data {
+  font-family: var(--ptSansNormal);
+  color: var(--darkPurple);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 15px 20px 20px;
+}
+
 .directionsText {
   font-family: var(--ptSansNormal);
   font-size: 30px;
   align-self: center;
+}
+
+.popup {
+  position: absolute;
+  top: -10px;
+  left: -30px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding: 5px;
+  z-index: 1;
+  background-color: var(--darkBlue);
+  width: 250px;
+  height: 150px;
+  border-radius: 2%;
+  color: var(--yellow);
+  font-family: var(--ptSansNormal);
+  font-size: 16px;
+  box-shadow: 0px 0px 5px 5px rgba(114, 62, 197, 0.5),
+    5px 5px 5px rgba(129, 120, 129, 0.8), 5px 5px 5px rgba(116, 94, 107, 0.767),
+    5px 5px 5px rgba(230, 199, 61, 0.6), -5px 5px 5px rgba(218, 184, 35, 0.6);
+}
+
+.close-button {
+  position: relative;
+  top: 80px;
+  width: 80%;
+  align-self: center;
+  cursor: pointer;
+  color: var(--white);
+  background: linear-gradient(var(--darkPurple), #9198e5);
+  transition: 1s ease-in-out;
+  border-radius: 16px;
+}
+
+.close-button:hover {
+  transform: scale(1.1);
 }

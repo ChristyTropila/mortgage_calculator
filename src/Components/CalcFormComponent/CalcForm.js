@@ -28,8 +28,8 @@ export const CalcForm = ({getDataFromCalculator}) => {
 
     const handleButtonClicked = (evt, sendDataToParent) => {
         evt.preventDefault();
+
         const interestValue = ((interestRate/100) / 12) + 1;
-        
         const userAmount = Number(loanAmount);
         const calculatedInterest = Number(interestRate) / 100 / 12;
         const lengthOfLoan = months ? loanDuration : loanDuration * 12;
@@ -38,22 +38,21 @@ export const CalcForm = ({getDataFromCalculator}) => {
         const monthly = (userAmount * interestCalculation * calculatedInterest) / (interestCalculation - 1);
 
         
-   if (isFinite(monthly)) {
-    const monthlyPaymentCalculated = monthly.toFixed(2);
-    const totalPaymentCalculated = (monthly * lengthOfLoan).toFixed(2);
-    const totalInterestCalculated = (monthly * lengthOfLoan - userAmount).toFixed(2);
+        if (isFinite(monthly)) {
+            const monthlyPaymentCalculated = monthly.toFixed(2);
+            const totalPaymentCalculated = (monthly * lengthOfLoan).toFixed(2);
+            const totalInterestCalculated = (monthly * lengthOfLoan - userAmount).toFixed(2);
 
-    setResults({
-        monthlyPayment: monthlyPaymentCalculated,
-        totalPayment: totalPaymentCalculated,
-        totalInterest: totalInterestCalculated,
-        isResult: true,
-    });
+            setResults({
+                monthlyPayment: monthlyPaymentCalculated,
+                totalPayment: totalPaymentCalculated,
+                totalInterest: totalInterestCalculated,
+                isResult: true,
+        });
         //convert payment period in years to monthly payments
        
     }
 }
-
 
     return(
         <>
@@ -77,13 +76,14 @@ export const CalcForm = ({getDataFromCalculator}) => {
                  placeholder=""
                  onChange={e => setLoanDuration(e.target.value)}
                  name="loanTerm"/>
-                 <div className="select-dropdown-container" style={{width: '200px'}}>
-                     <select className="select-dropdown" onChange={handleSelectOptions}>
+            </div>
+            <div className="select-dropdown-container" >
+            <label htmlFor="duration">Duration</label>
+                     <select className="select-dropdown" name="duration" onChange={handleSelectOptions}>
                          <option className="options" value="years">Years</option>
                          <option className="options" value="months">Months</option>
                      </select>
-                 </div>
-            </div>
+           </div>
             
             <div className="interest-rate">
                 <label htmlFor="interestRate">Interest Rate</label>
@@ -95,8 +95,9 @@ export const CalcForm = ({getDataFromCalculator}) => {
                  onChange={e => setInterestRate(e.target.value)}
                  name="interestRate"/>
             </div>
+            <div className="button-container">
             <button type="button" onClick={handleButtonClicked} className="button">Calculate!</button>
-
+            </div>
         </form>
         </>
     )
