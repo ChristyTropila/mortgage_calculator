@@ -6,6 +6,7 @@
   font-size: 25px;
   margin-bottom: 10px;
   margin: 15px 18px;
+  animation: pulse 5s infinite alternate;
 }
 
 .data {
@@ -35,9 +36,18 @@
   height: 200px;
   text-align: center;
   border-radius: 2%;
+  transform: translateY(-600px);
+  animation: 1s slideIn ease-in-out forwards 0.5s;
   box-shadow: 0px 0px 5px 5px rgba(114, 62, 197, 0.5),
     5px 5px 5px rgba(129, 120, 129, 0.8), 5px 5px 5px rgba(116, 94, 107, 0.767),
     5px 5px 5px rgba(230, 199, 61, 0.6), -5px 5px 5px rgba(218, 184, 35, 0.6);
+}
+
+@keyframes slideIn {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 .popup-txt {
@@ -65,4 +75,32 @@
 
 .close-button:hover {
   transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .popup {
+    width: 300px;
+    left: 20px;
+  }
+  .popup-txt {
+    font-size: 1.5rem;
+  }
+  .label {
+    font-size: 1rem;
+    margin: 5px 8px;
+    padding: 5px;
+  }
+  .data {
+    font-size: 0.9rem;
+    margin: 5px 15px 10px 15px;
+  }
 }

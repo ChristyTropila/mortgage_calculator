@@ -6,8 +6,7 @@ export const PopupModal = ({handleButtonClick, variant}) => {
        {variant: "Monthly", details: 'Your total monthly payment is determined by dividing the total amount owed by length of loan.'},
        {variant: "Interest", details: "This is the total amount of interest that you will pay on top of the original amount you wish to borrow."},
        {variant: "Total", details: "This is the total amount you will pay over the course of your loan duration."}
-   ]
-
+   ];
 
     const handleButtonClicked = () =>{
         handleButtonClick();

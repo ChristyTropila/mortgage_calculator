@@ -9,7 +9,6 @@ export const CalcForm = ({getDataFromCalculator}) => {
     const [interestRate, setInterestRate] = useState();
     const [results, setResults] = useState({monthlyPayment: 0, totalPayment: 0, totalInterest: 0, isResult: false});
 
-
     useEffect(() => {
         getDataFromCalculator(results)
     }, [results]);
@@ -48,11 +47,9 @@ export const CalcForm = ({getDataFromCalculator}) => {
                 totalPayment: totalPaymentCalculated,
                 totalInterest: totalInterestCalculated,
                 isResult: true,
-        });
-        //convert payment period in years to monthly payments
-       
+        });       
     }
-}
+};
 
     return(
         <>
@@ -78,11 +75,11 @@ export const CalcForm = ({getDataFromCalculator}) => {
                  name="loanTerm"/>
             </div>
             <div className="select-dropdown-container" >
-            <label htmlFor="duration">Duration</label>
-                     <select className="select-dropdown" name="duration" onChange={handleSelectOptions}>
-                         <option className="options" value="years">Years</option>
-                         <option className="options" value="months">Months</option>
-                     </select>
+                <label htmlFor="duration">Duration</label>
+                <select className="select-dropdown" name="duration" onChange={handleSelectOptions}>
+                    <option className="options" value="years">Years</option>
+                    <option className="options" value="months">Months</option>
+                </select>
            </div>
             
             <div className="interest-rate">
@@ -96,7 +93,7 @@ export const CalcForm = ({getDataFromCalculator}) => {
                  name="interestRate"/>
             </div>
             <div className="button-container">
-            <button type="button" onClick={handleButtonClicked} className="button">Calculate!</button>
+                <button type="button" onClick={handleButtonClicked} className="button">Calculate!</button>
             </div>
         </form>
         </>

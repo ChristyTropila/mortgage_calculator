@@ -2,10 +2,13 @@ import styles from './CalcDirectionsCss.css';
 import {PopupModal} from './PopupModal';
 import React, {useState} from 'react';
 
-
 export const CalcDirections = ({calcData}) => {
     const [mouseHover, setMouseHover] = useState(false);
     const [variant, setVariant] = useState('');
+
+    if(calcData?.monthlyPayment === 0){
+      return null;
+    };  
 
     const handleMouseEnterMonthly = (evt) => {
       setMouseHover(true);
@@ -24,10 +27,6 @@ export const CalcDirections = ({calcData}) => {
 
     const closeModal = () => {
         setMouseHover(false);
-    }
-
-    if(calcData?.monthlyPayment === 0){
-        return null;
     }
 
     return(

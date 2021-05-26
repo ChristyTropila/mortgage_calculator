@@ -37,3 +37,16 @@
 .txt {
   border-right: 30px solid rgb(17, 16, 16);
 }
+
+@media only screen and (max-width: 600px) {
+  .header-text-top {
+    font-size: 2.5rem;
+    left: 0;
+    top: 40px;
+  }
+  .txt-type {
+    position: relative;
+    top: 50px;
+    margin-left: -8px;
+  }
+}

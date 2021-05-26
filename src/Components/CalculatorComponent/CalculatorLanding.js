@@ -13,10 +13,10 @@ export const CalculatorLanding = () => {
     return(
         <>
         <div className="directions-container">
-        <CalcDirections calcData = {calculationData} />
+          {calculationData ?  <CalcDirections calcData = {calculationData} /> : null }
         </div>
         <div className="calculator-container">
-        <CalcForm getDataFromCalculator={getDataFromCalculator}/>
+            <CalcForm getDataFromCalculator={getDataFromCalculator}/>
         </div>
         </>
     )

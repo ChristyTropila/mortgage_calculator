@@ -46,7 +46,6 @@ export const Header = () => {
 
     function init() {
         const txtElement = document.querySelector('.txt-type');
-        console.log(txtElement)
         const words = JSON.parse(txtElement.getAttribute('data-words'));
         const wait = txtElement.getAttribute('data-wait');
 
@@ -59,7 +58,6 @@ export const Header = () => {
         <div className="typewriter-container">
             <span className="txt-type" data-wait="2000" data-words='["Buying your first home", "No hidden fees", "Best mortgage rates "]'></span>
         </div>
-        {/* <h1 className="header-text">Buying your first home.</h1> */}
         </>
     )
 }

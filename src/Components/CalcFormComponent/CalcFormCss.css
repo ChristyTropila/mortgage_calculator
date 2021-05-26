@@ -30,8 +30,6 @@ label {
   font-size: 15px;
 }
 
-.loan-term {
-}
 #loanTerm {
   margin-left: 27px;
 }
@@ -71,10 +69,10 @@ input:focus {
 }
 
 .button {
-  font-family: var(--ptSansNarrowBold);
+  font-family: var(--ptSansNormal);
   cursor: pointer;
   font-weight: 600;
-  letter-spacing: 2.5px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   color: white;
   width: 30%;
@@ -87,4 +85,33 @@ input:focus {
 
 .button:hover {
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 480px) {
+  .form {
+    padding: 30px 5px;
+  }
+  .form > div {
+    margin: 20px 0;
+    padding: 0;
+  }
+  label {
+    font-size: 1rem;
+    padding: 0;
+    margin-right: 10px;
+  }
+  .input {
+    width: 40%;
+    height: 10px;
+  }
+  #loanTerm {
+    margin-left: 20px;
+  }
+  .select-dropdown {
+    width: 40%;
+    margin-left: 25px;
+  }
+  .button {
+    width: 50%;
+  }
 }
