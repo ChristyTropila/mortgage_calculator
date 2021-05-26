@@ -1,4 +1,4 @@
-import styles from './CalculatorLandingCss.css';
+import './CalculatorLandingCss.css';
 import {CalcDirections} from '../CalcDirectionsComponent/CalcDirections';
 import {CalcForm} from '../CalcFormComponent/CalcForm';
 import React, {useState} from 'react';

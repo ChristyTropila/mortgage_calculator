@@ -1,4 +1,4 @@
-import styles from './CalcFormCss.css';
+import './CalcFormCss.css';
 import React, {useState, useEffect} from 'react';
 
 export const CalcForm = ({getDataFromCalculator}) => {

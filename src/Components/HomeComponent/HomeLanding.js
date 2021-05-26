@@ -1,7 +1,7 @@
 import React from 'react';
 import {Header} from '../HeaderComponent/Header';
 import {CalculatorLanding} from '../CalculatorComponent/CalculatorLanding';
-import styles from './HomeLandingCss.css';
+import  './HomeLandingCss.css';
 
 export const HomeLanding = () => {
 

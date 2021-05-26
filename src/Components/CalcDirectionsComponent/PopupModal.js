@@ -1,4 +1,4 @@
-import styles from './CalcDirectionsCss.css';
+import './CalcDirectionsCss.css';
 
 export const PopupModal = ({handleButtonClick, variant}) => {
 
